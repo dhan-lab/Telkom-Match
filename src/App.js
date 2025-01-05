@@ -44,7 +44,6 @@ function App() {
             if (card.src === choiceOne.src) {
               return {...card, matched: true}
             } else {
-              console.log(card);
               return card
             }
           })
