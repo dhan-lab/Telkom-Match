@@ -69,7 +69,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Telkom Match</h1>
+      <h1>Telkom Match </h1>
       <div className="card-grid">
         {cards.map(card => 
         <SingleCard 
