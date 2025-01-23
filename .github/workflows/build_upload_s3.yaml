@@ -14,6 +14,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Install latest Node.js and npm
+        run: |
+          curl -fsSL https://deb.nodesource.com/setup_current.x | bash -
+          sudo apt-get install -y nodejs
+          node -v # 
+          npm -v  # 
+
       # Step 2: Install dependencies and build project
       - name: Install dependencies and build
         run: |
