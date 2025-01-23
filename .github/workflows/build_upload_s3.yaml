@@ -16,7 +16,7 @@ jobs:
 
       - name: Install latest Node.js and npm
         run: |
-          curl -fsSL https://deb.nodesource.com/setup_current.x | bash -
+          curl -fsSL https://deb.nodesource.com/setup_current.x | sudo bash -
           sudo apt-get install -y nodejs
           node -v # 
           npm -v  # 
